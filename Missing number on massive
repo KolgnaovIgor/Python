@@ -1,0 +1,16 @@
+st = input()
+a = [int(m) for m in st.split()]
+a.sort()
+a = [x for x in a if x > 0]
+if a != []:
+    num = 0
+    for i in a:
+        num += 1
+        if num != i:
+            break
+    if a[a.index(i)] == len(a):
+        if num == len(a):
+            num += 1
+    print(num)
+if a == []:
+    print(a)
